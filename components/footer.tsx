@@ -13,9 +13,9 @@ const quickLinks = [
 ]
 
 const safetyOrgs = [
-  { href: "https://www.begambleaware.org/", src: "/gamble.webp", alt: "BeGambleAware — Free Safer Gambling Advice", bg: "#000000" },
+  { href: "https://www.begambleaware.org/", src: "/gamble.webp", alt: "BeGambleAware — Free Safer Gambling Advice", bg: "#ffffff" },
   { href: "https://www.gamstop.co.uk/", src: "/gamstop.png", alt: "GamStop — National Self-Exclusion Scheme", bg: "#ffffff" },
-  { href: "https://gordonmoody.org.uk/", src: "/gordon.png", alt: "Gambling Therapy — Online Support", bg: "#000000" },
+  { href: "https://gordonmoody.org.uk/", src: "/gordon.png", alt: "Gambling Therapy — Online Support", bg: "#ffffff" },
   { href: "https://www.gamblingcommission.gov.uk/", src: "/commission.png", alt: "UK Gambling Commission — Regulatory Body", bg: "#ffffff" },
   { href: "https://www.gamcare.org.uk/", src: "/gamecare.svg", alt: "GamCare — Support for Gambling Harm", bg: "#ffffff" },
 ]

@@ -229,7 +229,7 @@ export function BookmakerCard({ site, rank }: BookmakerCardProps) {
           className="flex flex-col items-center justify-center border-r px-5 py-4 gap-2"
           style={{
             width: 180,
-            background: "hsl(214 50% 7%)",
+            background: "hsl(0, 0%, 100%)",
             borderColor: "hsl(214 32% 16%)",
           }}
         >
@@ -308,7 +308,7 @@ export function BookmakerCard({ site, rank }: BookmakerCardProps) {
         <RankColumn rank={rank} tier={tier} />
         <div
           className="flex flex-col items-center justify-center border-r px-4 py-3 gap-1.5"
-          style={{ width: 150, background: "hsl(214 50% 7%)", borderColor: "hsl(214 32% 16%)" }}
+          style={{ width: 150, background: "hsl(0, 0%, 100%)", borderColor: "hsl(214 32% 16%)" }}
         >
           <img
             src={site.logo || "/placeholder.svg"}
@@ -360,7 +360,7 @@ export function BookmakerCard({ site, rank }: BookmakerCardProps) {
           <RankColumn rank={rank} tier={tier} />
           <div
             className="flex items-center justify-center border-r px-3 py-3 shrink-0"
-            style={{ width: 100, background: "hsl(214 50% 7%)", borderColor: "hsl(214 32% 16%)" }}
+            style={{ width: 100, background: "hsl(0, 0%, 100%)", borderColor: "hsl(214 32% 16%)" }}
           >
             <img
               src={site.logo || "/placeholder.svg"}
@@ -423,7 +423,7 @@ export function BookmakerCard({ site, rank }: BookmakerCardProps) {
           className="border-t px-4 py-1.5 pl-[calc(3px+1rem)]"
           style={{
             borderColor: "hsl(214 32% 15%)",
-            background: "hsl(214 50% 6%)",
+            background: "hsl(0, 0%, 100%)",
           }}
         >
           <div className="flex items-start justify-between gap-2">
