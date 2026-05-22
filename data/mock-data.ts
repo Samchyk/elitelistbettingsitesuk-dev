@@ -9,7 +9,7 @@ const rawSites: Omit<BettingSite, "score">[] = [
     welcomeOffer: "£30 Welcome Bonus",
     terms: "18+ | New customers | Deposit £5, bet £5 to receive £30 Free Bets | Valid 7 days | T&Cs apply | BeGambleAware.org",
     paymentMethods: ["Visa/Mastercard", "PayPal", "Apple Pay"],
-    link: "https://www.ladbrokes.com/en/sports",
+    link: "https://www.ladbrokes.com/",
     reviews: 9187,
   },
   {
@@ -20,7 +20,7 @@ const rawSites: Omit<BettingSite, "score">[] = [
     welcomeOffer: "£30 Free Bets",
     terms: "18+ | New customers | Bet £5 to get £30 in Free Bets | Valid 7 days | T&Cs apply | BeGambleAware.org",
     paymentMethods: ["Visa/Mastercard", "PayPal", "Apple Pay"],
-    link: "https://www.betvictor.com/en-gb/",
+    link: "https://www.betvictor.com/",
     reviews: 8841,
   },
   {
@@ -31,7 +31,7 @@ const rawSites: Omit<BettingSite, "score">[] = [
     welcomeOffer: "£50 Free Bets",
     terms: "18+ | New customers | Deposit & bet £10 on Sports to get £50 in Free Bets | Free Bets valid 7 days | T&Cs apply | BeGambleAware.org",
     paymentMethods: ["Visa/Mastercard", "PayPal", "Bank Transfer"],
-    link: "https://www.betfred.com/sports",
+    link: "https://www.betfred.com/",
     reviews: 9312,
   },
   {
