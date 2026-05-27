@@ -13,17 +13,17 @@ export function VipRankingsPanel() {
       <div
         className="flex items-center justify-between gap-3 px-4 py-3 mb-4 rounded-xl"
         style={{
-          background: "hsl(214 50% 7%)",
-          border: "1px solid hsl(214 32% 18%)",
-          borderLeft: "3px solid hsl(172 80% 36%)",
+          background: "hsl(20 11% 15%)",
+          border: "1px solid hsl(20 10% 22%)",
+          borderLeft: "3px solid hsl(38 92% 50%)",
         }}
       >
         <div className="flex items-center gap-2.5">
           <div
             className="flex items-center justify-center w-7 h-7 rounded-lg shrink-0"
-            style={{ background: "hsl(172 80% 36% / 0.12)", border: "1px solid hsl(172 80% 36% / 0.28)" }}
+            style={{ background: "hsl(38 92% 50% / 0.12)", border: "1px solid hsl(38 92% 50% / 0.24)" }}
           >
-            <Trophy className="w-3.5 h-3.5" style={{ color: "hsl(172 80% 52%)" }} aria-hidden />
+            <Trophy className="w-3.5 h-3.5" style={{ color: "hsl(38 92% 60%)" }} aria-hidden />
           </div>
           <div>
             <h2
@@ -34,7 +34,7 @@ export function VipRankingsPanel() {
             </h2>
             <p
               className="text-[9px] font-medium mt-0.5 leading-none"
-              style={{ color: "hsl(200 14% 46%)" }}
+              style={{ color: "hsl(40 12% 50%)" }}
             >
               Independently assessed &amp; verified — no paid placements
             </p>
@@ -46,24 +46,24 @@ export function VipRankingsPanel() {
           <div
             className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg"
             style={{
-              background: "hsl(172 80% 36% / 0.10)",
-              border: "1px solid hsl(172 80% 36% / 0.24)",
+              background: "hsl(38 92% 50% / 0.10)",
+              border: "1px solid hsl(38 92% 50% / 0.20)",
             }}
           >
             <span
               className="inline-block w-1.5 h-1.5 rounded-full elite-pulse shrink-0"
-              style={{ background: "hsl(172 80% 50%)" }}
+              style={{ background: "hsl(38 92% 58%)" }}
               aria-hidden
             />
             <span
               className="text-[10px] font-bold uppercase tracking-wider"
-              style={{ color: "hsl(172 80% 54%)" }}
+              style={{ color: "hsl(38 92% 62%)" }}
             >
               {bettingSites.length} Ranked
             </span>
           </div>
           {/* Updated indicator */}
-          <div className="hidden sm:flex items-center gap-1" style={{ color: "hsl(200 14% 40%)" }}>
+          <div className="hidden sm:flex items-center gap-1" style={{ color: "hsl(40 12% 44%)" }}>
             <RefreshCw className="w-3 h-3" aria-hidden />
             <span className="text-[9px] font-medium">Updated May 2026</span>
           </div>

@@ -15,22 +15,22 @@ export function SiteHeader() {
       className="sticky top-0 z-40"
       role="banner"
     >
-      {/* ── Teal top accent line ── */}
+      {/* ── Amber top accent line ── */}
       <div
         className="h-[3px] w-full"
         aria-hidden
         style={{
           background:
-            "linear-gradient(90deg, hsl(172 80% 36%) 0%, hsl(172 85% 46%) 38%, hsl(152 78% 42%) 68%, hsl(207 72% 48%) 100%)",
+            "linear-gradient(90deg, hsl(38 92% 50%) 0%, hsl(38 88% 42%) 50%, hsl(38 92% 50%) 100%)",
         }}
       />
 
       {/* ── Main header bar ── */}
       <div
         style={{
-          background: "hsl(214 52% 7%)",
-          borderBottom: "1px solid hsl(172 80% 36% / 0.18)",
-          boxShadow: "0 4px 28px hsl(214 52% 4% / 0.65)",
+          background: "hsl(20 11% 11%)",
+          borderBottom: "1px solid hsl(38 92% 50% / 0.12)",
+          boxShadow: "0 4px 28px hsl(20 11% 6% / 0.65)",
         }}
       >
         <div className="container mx-auto max-w-6xl px-4">
@@ -66,18 +66,18 @@ export function SiteHeader() {
             <div
               className="hidden sm:flex items-center gap-2 shrink-0 px-3 py-1.5 rounded-sm"
               style={{
-                background: "hsl(172 80% 36% / 0.10)",
-                border: "1px solid hsl(172 80% 36% / 0.26)",
+                background: "hsl(38 92% 50% / 0.10)",
+                border: "1px solid hsl(38 92% 50% / 0.22)",
               }}
             >
               <ShieldCheck
                 className="w-3.5 h-3.5"
-                style={{ color: "hsl(172 80% 50%)" }}
+                style={{ color: "hsl(38 92% 60%)" }}
                 strokeWidth={2}
               />
               <span
                 className="font-sans font-bold text-[10px] uppercase tracking-widest"
-                style={{ color: "hsl(172 80% 50%)" }}
+                style={{ color: "hsl(38 92% 60%)" }}
               >
                 18+ Only
               </span>
