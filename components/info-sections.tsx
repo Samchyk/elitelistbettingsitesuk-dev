@@ -142,40 +142,40 @@ const faqItems = [
 
 const accentMap = {
   teal: {
-    tag:        "hsl(172 80% 52%)",
-    tagBg:      "hsl(172 80% 36% / 0.10)",
-    tagBorder:  "hsl(172 80% 36% / 0.28)",
-    iconColor:  "hsl(172 80% 56%)",
-    bar:        "hsl(172 80% 38%)",
-    numColor:   "hsl(172 80% 36% / 0.18)",
-    glow:       "hsl(172 80% 36% / 0.12)",
-    cardBorder: "hsl(172 80% 36% / 0.20)",
-    highlight:  "hsl(172 80% 36% / 0.08)",
-    highlightBorder: "hsl(172 80% 36% / 0.30)",
+    tag:        "hsl(38 92% 60%)",
+    tagBg:      "hsl(38 92% 50% / 0.12)",
+    tagBorder:  "hsl(38 92% 50% / 0.28)",
+    iconColor:  "hsl(38 92% 60%)",
+    bar:        "hsl(38 92% 50%)",
+    numColor:   "hsl(38 92% 50% / 0.18)",
+    glow:       "hsl(38 92% 50% / 0.14)",
+    cardBorder: "hsl(38 92% 50% / 0.20)",
+    highlight:  "hsl(38 92% 50% / 0.08)",
+    highlightBorder: "hsl(38 92% 50% / 0.30)",
   },
   green: {
-    tag:        "hsl(152 78% 52%)",
-    tagBg:      "hsl(152 78% 42% / 0.10)",
-    tagBorder:  "hsl(152 78% 42% / 0.26)",
-    iconColor:  "hsl(152 78% 56%)",
-    bar:        "hsl(152 78% 38%)",
-    numColor:   "hsl(152 78% 42% / 0.18)",
-    glow:       "hsl(152 78% 42% / 0.11)",
-    cardBorder: "hsl(152 78% 42% / 0.18)",
-    highlight:  "hsl(152 78% 42% / 0.08)",
-    highlightBorder: "hsl(152 78% 42% / 0.28)",
+    tag:        "hsl(40 25% 88%)",
+    tagBg:      "hsl(40 25% 92% / 0.12)",
+    tagBorder:  "hsl(40 25% 92% / 0.26)",
+    iconColor:  "hsl(40 25% 92%)",
+    bar:        "hsl(40 25% 92%)",
+    numColor:   "hsl(40 25% 92% / 0.18)",
+    glow:       "hsl(40 25% 92% / 0.11)",
+    cardBorder: "hsl(40 25% 92% / 0.18)",
+    highlight:  "hsl(40 25% 92% / 0.08)",
+    highlightBorder: "hsl(40 25% 92% / 0.28)",
   },
   steel: {
-    tag:        "hsl(207 72% 62%)",
-    tagBg:      "hsl(207 72% 48% / 0.10)",
-    tagBorder:  "hsl(207 72% 48% / 0.26)",
-    iconColor:  "hsl(207 72% 64%)",
-    bar:        "hsl(207 72% 44%)",
-    numColor:   "hsl(207 72% 48% / 0.18)",
-    glow:       "hsl(207 72% 48% / 0.11)",
-    cardBorder: "hsl(207 72% 48% / 0.18)",
-    highlight:  "hsl(207 72% 48% / 0.08)",
-    highlightBorder: "hsl(207 72% 48% / 0.28)",
+    tag:        "hsl(38 92% 58%)",
+    tagBg:      "hsl(38 92% 50% / 0.10)",
+    tagBorder:  "hsl(38 92% 50% / 0.26)",
+    iconColor:  "hsl(38 92% 60%)",
+    bar:        "hsl(38 88% 44%)",
+    numColor:   "hsl(38 92% 50% / 0.18)",
+    glow:       "hsl(38 92% 50% / 0.11)",
+    cardBorder: "hsl(38 92% 50% / 0.18)",
+    highlight:  "hsl(38 92% 50% / 0.08)",
+    highlightBorder: "hsl(38 92% 50% / 0.28)",
   },
 } as const
 
@@ -218,7 +218,7 @@ function SportBanner({
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(108deg, hsl(214 55% 4% / 0.98) 0%, hsl(214 50% 6% / 0.93) 48%, hsl(207 55% 9% / 0.72) 100%)",
+            "linear-gradient(108deg, hsl(20 11% 11% / 0.98) 0%, hsl(20 11% 13% / 0.93) 48%, hsl(20 10% 15% / 0.72) 100%)",
         }}
         aria-hidden
       />
@@ -227,19 +227,19 @@ function SportBanner({
       {/* Bottom gradient rule */}
       <div
         className="absolute bottom-0 inset-x-0 h-[2px]"
-        style={{ background: "linear-gradient(90deg, hsl(172 80% 38%), hsl(152 78% 42%) 50%, transparent)" }}
+        style={{ background: "linear-gradient(90deg, hsl(38 92% 50%), hsl(40 25% 92%) 50%, transparent)" }}
         aria-hidden
       />
-      {/* Left teal edge bar */}
+      {/* Left amber edge bar */}
       <div
         className="absolute left-0 top-0 bottom-0 w-[3px]"
-        style={{ background: "linear-gradient(180deg, hsl(172 80% 48%), hsl(152 78% 38%))" }}
+        style={{ background: "linear-gradient(180deg, hsl(38 92% 58%), hsl(38 88% 42%))" }}
         aria-hidden
       />
       {/* Right glow */}
       <div
         className="absolute -top-16 right-0 w-96 h-96 pointer-events-none"
-        style={{ background: "radial-gradient(ellipse at top right, hsl(172 80% 36% / 0.12) 0%, transparent 65%)" }}
+        style={{ background: "radial-gradient(ellipse at top right, hsl(38 92% 50% / 0.12) 0%, transparent 65%)" }}
         aria-hidden
       />
 
@@ -250,16 +250,16 @@ function SportBanner({
           <div
             className="hidden sm:flex items-center justify-center w-12 h-12 rounded-md shrink-0"
             style={{
-              background: "hsl(172 80% 36% / 0.14)",
-              border: "1.5px solid hsl(172 80% 36% / 0.36)",
+              background: "hsl(38 92% 50% / 0.14)",
+              border: "1.5px solid hsl(38 92% 50% / 0.36)",
             }}
           >
-            <Icon className="w-6 h-6" style={{ color: "hsl(172 80% 54%)" }} strokeWidth={1.7} />
+            <Icon className="w-6 h-6" style={{ color: "hsl(38 92% 60%)" }} strokeWidth={1.7} />
           </div>
           <div>
             <div className="flex items-center gap-2 mb-1">
-              <span className="w-1.5 h-1.5 rounded-full elite-pulse" style={{ background: "hsl(172 80% 50%)" }} aria-hidden />
-              <span className="text-[10px] font-bold uppercase tracking-[0.28em]" style={{ color: "hsl(172 80% 54%)" }}>
+              <span className="w-1.5 h-1.5 rounded-full elite-pulse" style={{ background: "hsl(38 92% 58%)" }} aria-hidden />
+              <span className="text-[10px] font-bold uppercase tracking-[0.28em]" style={{ color: "hsl(38 92% 62%)" }}>
                 {eyebrow}
               </span>
             </div>
@@ -268,30 +268,30 @@ function SportBanner({
               style={{ fontSize: "clamp(1.05rem, 2.6vw, 1.55rem)", color: "hsl(0 0% 98%)" }}
             >
               {title}{" "}
-              <span style={{ color: "hsl(172 80% 52%)" }}>{titleAccent}</span>
+              <span style={{ color: "hsl(38 92% 60%)" }}>{titleAccent}</span>
             </h2>
-            <p className="text-[11px] mt-1 max-w-md" style={{ color: "hsl(200 16% 48%)" }}>
+            <p className="text-[11px] mt-1 max-w-md" style={{ color: "hsl(40 12% 54%)" }}>
               {sub}
             </p>
           </div>
         </div>
 
         {/* Right: micro stats */}
-        <div className="hidden sm:flex items-center gap-0 rounded-md overflow-hidden shrink-0" style={{ border: "1px solid hsl(214 32% 19%)" }}>
+        <div className="hidden sm:flex items-center gap-0 rounded-md overflow-hidden shrink-0" style={{ border: "1px solid hsl(20 10% 22%)" }}>
           {stats.map(({ label, value, icon: SIcon }, i) => (
             <div
               key={label}
               className="flex flex-col items-center justify-center px-5 py-2.5"
               style={{
-                background: i % 2 === 0 ? "hsl(214 48% 9%)" : "hsl(214 44% 11%)",
-                borderRight: i < stats.length - 1 ? "1px solid hsl(214 32% 19%)" : "none",
+                background: i % 2 === 0 ? "hsl(20 11% 14%)" : "hsl(20 11% 16%)",
+                borderRight: i < stats.length - 1 ? "1px solid hsl(20 10% 22%)" : "none",
               }}
             >
-              <SIcon className="w-3.5 h-3.5 mb-1" style={{ color: "hsl(172 80% 46%)" }} strokeWidth={1.8} />
-              <p className="font-display font-black text-[13px] leading-none" style={{ color: "hsl(172 80% 52%)" }}>
+              <SIcon className="w-3.5 h-3.5 mb-1" style={{ color: "hsl(38 92% 56%)" }} strokeWidth={1.8} />
+              <p className="font-display font-black text-[13px] leading-none" style={{ color: "hsl(38 92% 60%)" }}>
                 {value}
               </p>
-              <p className="text-[9px] uppercase tracking-wide mt-0.5" style={{ color: "hsl(200 14% 42%)" }}>
+              <p className="text-[9px] uppercase tracking-wide mt-0.5" style={{ color: "hsl(40 12% 48%)" }}>
                 {label}
               </p>
             </div>
@@ -315,7 +315,7 @@ function EditorialCard({ item, index }: { item: (typeof editorialItems)[0]; inde
     <article
       className="card-lift group relative overflow-hidden"
       style={{
-        background: "hsl(214 44% 10%)",
+        background: "hsl(20 11% 14%)",
         border: `1px solid ${a.cardBorder}`,
         borderRadius: "10px",
         borderTop: `2px solid ${a.bar}`,
@@ -418,7 +418,7 @@ export function EditorialPanel() {
   return (
     <section className="mt-16 sm:mt-24" aria-label="How we review and rank UK bookmakers">
       <SportBanner
-        src="/images/editorial-bg.jpg"
+        src="/images/info-section-1.jpg"
         eyebrow="Editorial Guide"
         title="How We Review &amp; Rank"
         titleAccent="UK Bookmakers"
@@ -442,9 +442,9 @@ export function EditorialPanel() {
       <div
         className="mt-6 flex flex-col sm:flex-row items-center gap-4 px-5 py-4 rounded-lg"
         style={{
-          background: "hsl(214 50% 7%)",
-          border: "1px solid hsl(172 80% 36% / 0.14)",
-          borderLeft: "3px solid hsl(172 80% 38%)",
+          background: "hsl(20 11% 13%)",
+          border: "1px solid hsl(38 92% 50% / 0.14)",
+          borderLeft: "3px solid hsl(38 92% 50%)",
         }}
       >
         <div
@@ -475,14 +475,14 @@ export function EditorialPanel() {
 ───────────────────────────────────────────── */
 
 const faqAccents = [
-  "hsl(172 80% 38%)",
-  "hsl(152 78% 38%)",
-  "hsl(207 72% 44%)",
-  "hsl(172 80% 38%)",
-  "hsl(152 78% 38%)",
-  "hsl(207 72% 44%)",
-  "hsl(172 80% 38%)",
-  "hsl(152 78% 38%)",
+  "hsl(38 92% 50%)",
+  "hsl(40 25% 92%)",
+  "hsl(38 88% 42%)",
+  "hsl(38 92% 50%)",
+  "hsl(40 25% 92%)",
+  "hsl(38 88% 42%)",
+  "hsl(38 92% 50%)",
+  "hsl(40 25% 92%)",
 ]
 
 function FaqItem({ q, a, index }: { q: string; a: string; index: number }) {
@@ -492,9 +492,9 @@ function FaqItem({ q, a, index }: { q: string; a: string; index: number }) {
   return (
     <div
       style={{
-        borderBottom: "1px solid hsl(214 32% 16%)",
+        borderBottom: "1px solid hsl(20 10% 20%)",
         transition: "background 0.18s ease",
-        background: open ? "hsl(214 44% 11%)" : "transparent",
+        background: open ? "hsl(20 11% 16%)" : "transparent",
       }}
     >
       <button
@@ -514,7 +514,7 @@ function FaqItem({ q, a, index }: { q: string; a: string; index: number }) {
         {/* Question */}
         <span
           className="flex-1 font-display font-bold text-[12.5px] sm:text-[13px] leading-snug tracking-tight uppercase"
-          style={{ color: open ? "hsl(200 20% 95%)" : "hsl(200 18% 82%)", transition: "color 0.18s ease" }}
+          style={{ color: open ? "hsl(0 0% 98%)" : "hsl(40 10% 80%)", transition: "color 0.18s ease" }}
         >
           {q}
         </span>
@@ -522,15 +522,15 @@ function FaqItem({ q, a, index }: { q: string; a: string; index: number }) {
         <span
           className="shrink-0 w-6 h-6 flex items-center justify-center rounded-sm transition-all duration-200"
           style={{
-            background: open ? accent : "hsl(214 44% 15%)",
-            border: `1.5px solid ${open ? accent : "hsl(214 32% 24%)"}`,
+            background: open ? accent : "hsl(20 11% 20%)",
+            border: `1.5px solid ${open ? accent : "hsl(20 10% 26%)"}`,
             transform: open ? "rotate(45deg)" : "rotate(0deg)",
           }}
           aria-hidden
         >
           <ChevronDown
             className="w-3.5 h-3.5"
-            style={{ color: open ? "hsl(214 50% 6%)" : "hsl(200 16% 52%)" }}
+            style={{ color: open ? "hsl(20 11% 10%)" : "hsl(40 12% 48%)" }}
             strokeWidth={2.5}
           />
         </span>
@@ -567,7 +567,7 @@ export function FaqSection() {
   return (
     <section className="mt-16 sm:mt-24" aria-label="Frequently asked questions">
       <SportBanner
-        src="/images/rankings-bg.jpg"
+        src="/images/info-section-3.jpg"
         eyebrow="FAQ"
         title="Frequently Asked"
         titleAccent="Questions"
@@ -591,10 +591,10 @@ export function FaqSection() {
               onClick={() => setActiveCategory(cat.id)}
               className="text-[11px] font-bold uppercase tracking-[0.18em] px-4 py-1.5 rounded-full transition-all duration-150"
               style={{
-                background: active ? "hsl(172 80% 36%)" : "hsl(214 44% 13%)",
-                color: active ? "hsl(214 50% 6%)" : "hsl(200 16% 58%)",
-                border: active ? "1.5px solid hsl(172 80% 38%)" : "1.5px solid hsl(214 32% 20%)",
-                boxShadow: active ? "0 2px 12px hsl(172 80% 36% / 0.28)" : "none",
+                background: active ? "hsl(38 92% 50%)" : "hsl(20 11% 16%)",
+                color: active ? "hsl(20 11% 10%)" : "hsl(40 12% 54%)",
+                border: active ? "1.5px solid hsl(38 92% 50%)" : "1.5px solid hsl(20 10% 22%)",
+                boxShadow: active ? "0 2px 12px hsl(38 92% 50% / 0.28)" : "none",
               }}
             >
               {cat.label}
@@ -607,13 +607,13 @@ export function FaqSection() {
       <div
         className="rounded-lg overflow-hidden"
         style={{
-          background: "hsl(214 44% 9%)",
-          border: "1px solid hsl(214 32% 18%)",
-          borderTop: "2px solid hsl(172 80% 36%)",
+          background: "hsl(20 11% 14%)",
+          border: "1px solid hsl(20 10% 22%)",
+          borderTop: "2px solid hsl(38 92% 50%)",
         }}
       >
         {filtered.length === 0 ? (
-          <p className="py-10 text-center text-[13px]" style={{ color: "hsl(200 14% 44%)" }}>
+          <p className="py-10 text-center text-[13px]" style={{ color: "hsl(40 12% 48%)" }}>
             No questions in this category.
           </p>
         ) : (
@@ -627,18 +627,18 @@ export function FaqSection() {
       <div
         className="mt-5 flex flex-col sm:flex-row items-center justify-between gap-4 px-5 py-4 rounded-lg"
         style={{
-          background: "hsl(214 50% 7%)",
-          border: "1px solid hsl(152 78% 42% / 0.16)",
-          borderLeft: "3px solid hsl(152 78% 38%)",
+          background: "hsl(20 11% 13%)",
+          border: "1px solid hsl(40 25% 92% / 0.16)",
+          borderLeft: "3px solid hsl(40 25% 92%)",
         }}
       >
         <div className="flex items-center gap-3">
-          <ShieldAlert className="w-5 h-5 shrink-0" style={{ color: "hsl(152 78% 50%)" }} strokeWidth={1.8} />
+          <ShieldAlert className="w-5 h-5 shrink-0" style={{ color: "hsl(40 25% 88%)" }} strokeWidth={1.8} />
           <p
             className="font-sans text-[11.5px] sm:text-[12px] leading-relaxed"
-            style={{ color: "hsl(200 14% 52%)" }}
+            style={{ color: "hsl(40 12% 62%)" }}
           >
-            <strong style={{ color: "hsl(152 78% 54%)", fontWeight: 700 }}>Need to take a break?</strong>{" "}
+            <strong style={{ color: "hsl(40 25% 92%)", fontWeight: 700 }}>Need to take a break?</strong>{" "}
             GAMSTOP provides free self-exclusion across all UKGC-licensed operators.
             Register at{" "}
             <a
@@ -646,7 +646,7 @@ export function FaqSection() {
               target="_blank"
               rel="noopener noreferrer"
               className="underline underline-offset-2"
-              style={{ color: "hsl(172 80% 50%)" }}
+              style={{ color: "hsl(38 92% 60%)" }}
             >
               gamstop.co.uk
             </a>{" "}

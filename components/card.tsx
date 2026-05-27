@@ -23,44 +23,44 @@ const TIER_CONFIG: Record<number, {
   1: {
     label: "Elite Pick",
     icon: Trophy,
-    accentColor: "hsl(172 80% 38%)",
-    accentGradient: "linear-gradient(180deg, hsl(172 80% 44%), hsl(172 80% 28%))",
-    badgeBg: "hsl(172 80% 36%)",
-    badgeColor: "hsl(214 55% 5%)",
-    glowColor: "hsl(172 80% 36% / 0.22)",
-    rankColor: "hsl(172 80% 52%)",
+    accentColor: "hsl(38 92% 50%)",
+    accentGradient: "linear-gradient(180deg, hsl(38 92% 58%), hsl(38 92% 38%))",
+    badgeBg: "hsl(38 92% 50%)",
+    badgeColor: "hsl(20 11% 10%)",
+    glowColor: "hsl(38 92% 50% / 0.22)",
+    rankColor: "hsl(38 92% 60%)",
   },
   2: {
     label: "Top Ranked",
     icon: Award,
-    accentColor: "hsl(152 78% 38%)",
-    accentGradient: "linear-gradient(180deg, hsl(152 84% 46%), hsl(152 78% 26%))",
-    badgeBg: "hsl(152 78% 34%)",
-    badgeColor: "hsl(214 55% 5%)",
-    glowColor: "hsl(152 78% 38% / 0.16)",
-    rankColor: "hsl(152 80% 50%)",
+    accentColor: "hsl(40 25% 92%)",
+    accentGradient: "linear-gradient(180deg, hsl(40 30% 96%), hsl(40 20% 82%))",
+    badgeBg: "hsl(40 25% 92%)",
+    badgeColor: "hsl(20 11% 10%)",
+    glowColor: "hsl(40 25% 92% / 0.16)",
+    rankColor: "hsl(40 25% 88%)",
   },
   3: {
     label: "Highly Rated",
     icon: TrendingUp,
-    accentColor: "hsl(207 72% 44%)",
-    accentGradient: "linear-gradient(180deg, hsl(207 80% 56%), hsl(207 72% 30%))",
-    badgeBg: "hsl(207 72% 40%)",
+    accentColor: "hsl(38 88% 42%)",
+    accentGradient: "linear-gradient(180deg, hsl(38 88% 52%), hsl(38 88% 30%))",
+    badgeBg: "hsl(38 88% 42%)",
     badgeColor: "hsl(0 0% 100%)",
-    glowColor: "hsl(207 72% 44% / 0.14)",
-    rankColor: "hsl(207 80% 60%)",
+    glowColor: "hsl(38 88% 42% / 0.14)",
+    rankColor: "hsl(38 88% 54%)",
   },
 }
 
 const DEFAULT_TIER = {
   label: "",
   icon: Shield,
-  accentColor: "hsl(214 32% 28%)",
-  accentGradient: "linear-gradient(180deg, hsl(214 32% 32%), hsl(214 32% 20%))",
-  badgeBg: "hsl(214 32% 26%)",
-  badgeColor: "hsl(200 14% 80%)",
-  glowColor: "hsl(214 32% 22% / 0.10)",
-  rankColor: "hsl(200 14% 54%)",
+  accentColor: "hsl(20 10% 28%)",
+  accentGradient: "linear-gradient(180deg, hsl(20 10% 32%), hsl(20 10% 20%))",
+  badgeBg: "hsl(20 10% 26%)",
+  badgeColor: "hsl(40 12% 70%)",
+  glowColor: "hsl(20 10% 22% / 0.10)",
+  rankColor: "hsl(40 12% 54%)",
 }
 
 function StarRating({ score, size = 12 }: { score: number; size?: number }) {
@@ -82,7 +82,7 @@ function StarRating({ score, size = 12 }: { score: number; size?: number }) {
               style={{
                 width: size,
                 height: size,
-                color: "hsl(172 80% 48%)",
+                color: "hsl(20 10% 26%)",
                 clipPath: `inset(0 ${(1 - fill) * 100}% 0 0)`,
               }}
               fill="currentColor"
@@ -102,21 +102,21 @@ function ScoreCircle({ score }: { score: number }) {
       style={{
         width: 52,
         height: 52,
-        background: "hsl(214 50% 7%)",
-        border: "2px solid hsl(172 80% 36% / 0.36)",
-        boxShadow: "0 0 12px hsl(172 80% 36% / 0.14)",
+        background: "hsl(20 11% 12%)",
+        border: "2px solid hsl(38 92% 50% / 0.36)",
+        boxShadow: "0 0 12px hsl(38 92% 50% / 0.14)",
       }}
       aria-label={`Score: ${score} out of 10`}
     >
       <span
         className="font-display font-black leading-none"
-        style={{ fontSize: "1.1rem", color: "hsl(172 80% 54%)" }}
+        style={{ fontSize: "1.1rem", color: "hsl(38 92% 60%)" }}
       >
         {score.toFixed(1)}
       </span>
       <span
         className="text-[8px] font-bold uppercase tracking-wide leading-none mt-0.5"
-        style={{ color: "hsl(200 14% 46%)" }}
+        style={{ color: "hsl(40 12% 50%)" }}
       >
         /10
       </span>
@@ -138,8 +138,8 @@ function RankColumn({
       className="flex flex-col items-center justify-center gap-1 shrink-0"
       style={{
         width: 52,
-        background: "hsl(214 55% 6%)",
-        borderRight: `1px solid hsl(214 32% 16%)`,
+        background: "hsl(20 11% 12%)",
+        borderRight: `1px solid hsl(20 10% 22%)`,
       }}
     >
       {/* Rank number */}
@@ -199,14 +199,14 @@ export function BookmakerCard({ site, rank }: BookmakerCardProps) {
       className={`relative overflow-hidden card-lift ${isTopPick ? "card-featured" : ""}`}
       style={{
         background: isTopPick
-          ? "hsl(214 48% 13%)"
+          ? "hsl(20 11% 14%)"
           : rank % 2 === 0
-          ? "hsl(214 44% 11%)"
-          : "hsl(214 42% 10%)",
-        border: `1px solid ${isTopPick ? "hsl(172 80% 36% / 0.32)" : "hsl(214 32% 19%)"}`,
+          ? "hsl(20 11% 13%)"
+          : "hsl(20 11% 12%)",
+        border: `1px solid ${isTopPick ? "hsl(38 92% 50% / 0.32)" : "hsl(20 10% 22%)"}`,
         borderRadius: "12px",
         boxShadow: isTopPick
-          ? `0 0 0 1px hsl(172 80% 36% / 0.18), 0 4px 24px ${tier.glowColor}`
+          ? `0 0 0 1px hsl(38 92% 50% / 0.18), 0 4px 24px ${tier.glowColor}`
           : "none",
       }}
       aria-label={`${site.name}${hasTier ? ` — ${tier.label}` : ""}`}
@@ -230,7 +230,7 @@ export function BookmakerCard({ site, rank }: BookmakerCardProps) {
           style={{
             width: 180,
             background: "hsl(0, 0%, 100%)",
-            borderColor: "hsl(214 32% 16%)",
+            borderColor: "hsl(20 10% 22%)",
           }}
         >
           <img
@@ -245,11 +245,11 @@ export function BookmakerCard({ site, rank }: BookmakerCardProps) {
         {/* Offer */}
         <div
           className="flex-1 flex flex-col items-start justify-center px-6 py-4 border-r gap-1"
-          style={{ borderColor: "hsl(214 32% 16%)" }}
+          style={{ borderColor: "hsl(20 10% 22%)" }}
         >
           <p
             className="text-[9px] font-bold uppercase tracking-[0.20em]"
-            style={{ color: "hsl(200 14% 44%)" }}
+            style={{ color: "hsl(40 12% 48%)" }}
           >
             Welcome Offer
           </p>
@@ -261,7 +261,7 @@ export function BookmakerCard({ site, rank }: BookmakerCardProps) {
           </p>
           <p
             className="text-sm font-semibold leading-tight"
-            style={{ color: "hsl(172 80% 52%)" }}
+            style={{ color: "hsl(38 92% 60%)" }}
           >
             {site.welcomeOffer}
           </p>
@@ -270,11 +270,11 @@ export function BookmakerCard({ site, rank }: BookmakerCardProps) {
         {/* Score */}
         <div
           className="flex flex-col items-center justify-center gap-1.5 px-5 py-4 border-r"
-          style={{ borderColor: "hsl(214 32% 16%)", minWidth: 110 }}
+          style={{ borderColor: "hsl(20 10% 22%)", minWidth: 110 }}
         >
           <ScoreCircle score={site.score} />
           <StarRating score={site.score} size={11} />
-          <span className="text-[9px]" style={{ color: "hsl(200 14% 44%)" }}>
+          <span className="text-[9px]" style={{ color: "hsl(40 12% 48%)" }}>
             {site.reviews.toLocaleString("en-GB")} reviews
           </span>
         </div>
@@ -308,7 +308,7 @@ export function BookmakerCard({ site, rank }: BookmakerCardProps) {
         <RankColumn rank={rank} tier={tier} />
         <div
           className="flex flex-col items-center justify-center border-r px-4 py-3 gap-1.5"
-          style={{ width: 150, background: "hsl(0, 0%, 100%)", borderColor: "hsl(214 32% 16%)" }}
+          style={{ width: 150, background: "hsl(0, 0%, 100%)", borderColor: "hsl(20 10% 22%)" }}
         >
           <img
             src={site.logo || "/placeholder.svg"}
@@ -319,7 +319,7 @@ export function BookmakerCard({ site, rank }: BookmakerCardProps) {
         </div>
         <div
           className="flex-1 flex flex-col justify-center px-4 py-3 border-r gap-0.5"
-          style={{ borderColor: "hsl(214 32% 16%)" }}
+          style={{ borderColor: "hsl(20 10% 22%)" }}
         >
           <p
             className="font-display text-sm font-black leading-tight uppercase"
@@ -327,7 +327,7 @@ export function BookmakerCard({ site, rank }: BookmakerCardProps) {
           >
             {site.bonus}
           </p>
-          <p className="text-xs font-semibold" style={{ color: "hsl(172 80% 50%)" }}>
+          <p className="text-xs font-semibold" style={{ color: "hsl(38 92% 54%)" }}>
             {site.welcomeOffer}
           </p>
         </div>
@@ -360,7 +360,7 @@ export function BookmakerCard({ site, rank }: BookmakerCardProps) {
           <RankColumn rank={rank} tier={tier} />
           <div
             className="flex items-center justify-center border-r px-3 py-3 shrink-0"
-            style={{ width: 100, background: "hsl(0, 0%, 100%)", borderColor: "hsl(214 32% 16%)" }}
+            style={{ width: 100, background: "hsl(0, 0%, 100%)", borderColor: "hsl(20 10% 22%)" }}
           >
             <img
               src={site.logo || "/placeholder.svg"}
@@ -381,7 +381,7 @@ export function BookmakerCard({ site, rank }: BookmakerCardProps) {
             >
               {site.bonus}
             </p>
-            <p className="text-xs font-semibold leading-tight" style={{ color: "hsl(172 80% 50%)" }}>
+            <p className="text-xs font-semibold leading-tight" style={{ color: "hsl(38 92% 54%)" }}>
               {site.welcomeOffer}
             </p>
           </div>
@@ -390,13 +390,13 @@ export function BookmakerCard({ site, rank }: BookmakerCardProps) {
         {/* Bottom row: score + CTA */}
         <div
           className="flex items-center justify-between gap-3 border-t px-3 py-2.5"
-          style={{ borderColor: "hsl(214 32% 16%)" }}
+          style={{ borderColor: "hsl(20 10% 22%)" }}
         >
           <div className="flex items-center gap-2.5">
             <ScoreCircle score={site.score} />
             <div className="flex flex-col gap-0.5">
               <StarRating score={site.score} size={11} />
-              <span className="text-[9px]" style={{ color: "hsl(200 14% 46%)" }}>
+              <span className="text-[9px]" style={{ color: "hsl(40 12% 48%)" }}>
                 {site.reviews.toLocaleString("en-GB")} reviews
               </span>
             </div>
@@ -422,18 +422,18 @@ export function BookmakerCard({ site, rank }: BookmakerCardProps) {
         <div
           className="border-t px-4 py-1.5 pl-[calc(3px+1rem)]"
           style={{
-            borderColor: "hsl(214 32% 15%)",
+            borderColor: "hsl(20 10% 20%)",
             background: "hsl(0, 0%, 100%)",
           }}
         >
           <div className="flex items-start justify-between gap-2">
             <p
               className={`text-[10px] leading-snug flex-1 ${!termsExpanded ? "line-clamp-1" : ""}`}
-              style={{ color: "hsl(200 14% 42%)" }}
+              style={{ color: "hsl(40 10% 38%)" }}
             >
               <span
                 className="font-semibold uppercase tracking-wider mr-1 text-[9px]"
-                style={{ color: "hsl(200 14% 52%)" }}
+                style={{ color: "hsl(40 12% 48%)" }}
               >
                 T&Cs:
               </span>
@@ -448,7 +448,7 @@ export function BookmakerCard({ site, rank }: BookmakerCardProps) {
                   setTermsExpanded(!termsExpanded)
                 }}
                 className="shrink-0 transition-colors"
-                style={{ color: "hsl(200 14% 48%)" }}
+                style={{ color: "hsl(40 12% 44%)" }}
                 aria-label={termsExpanded ? "Collapse terms" : "Expand terms"}
                 aria-expanded={termsExpanded}
               >

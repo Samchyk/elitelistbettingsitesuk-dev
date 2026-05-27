@@ -33,7 +33,7 @@ export function VipHeroBanner({ onDisclosureOpen, onTermsOpen }: VipHeroBannerPr
       {/* Background image */}
       <div className="relative" style={{ minHeight: "clamp(260px, 34vw, 380px)" }}>
         <Image
-          src="/images/hero-sports-bg.jpg"
+          src="/images/hero-bg.jpg"
           alt=""
           fill
           priority
